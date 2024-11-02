@@ -8,7 +8,7 @@
   </head>
   <body class="bg-gray-100">
     <!-- app bar -->
-    <div class="flex items-center justify-between mt-10 mb-6 px-4">
+    <div class="flex md:hidden items-center justify-between mt-10 mb-6 px-4">
       <div class="">Digitize</div>
       <div class="text-lg font-bold text-slate-800">ساعت هوشمند</div>
       <div class="w-7 h-7 bg-white shadow-lg flex justify-center items-center rounded">
@@ -30,7 +30,7 @@
     </div>
     <!-- app bar -->
     <!-- filter - sort -->
-    <div class="flex items-center justify-between px-4 gap-x-4">
+    <div class="flex md:hidden items-center justify-between px-4 gap-x-4 mb-9">
       <div class="bg-white py-2 pr-4 rounded flex items-center justify-start w-1/2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -67,5 +67,64 @@
       </div>
     </div>
     <!-- filter - sort -->
+    <!-- products section -->
+    <div class="grid gap-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <!-- product -->
+      <div class="bg-white rounded-xl p-2 shadow-md">
+        <div class="mb-3 bg-gray-100 rounded-xl">
+          <img src="../assets/images/apple-watch-9.png" alt="apple watch 9" />
+        </div>
+        <!-- product description -->
+        <div class="flex items-center justify-between w-full mb-3">
+          <span class="text-slate-200 text-sm md:text-base">اپل</span>
+          <div class="flex items-center" x-data="{ color: 'red' }">
+            <div @click="color = 'red'" :class="color === 'red' ? 'ring-1 sm:ring-2 lg:ring-3 ring-red-400 ' : ''" class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 flex justify-center items-center rounded-full cursor-pointer bg-red-400 border-2 border-white -mr-1.5">
+              <svg x-show="color === 'red'" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 sm:size-5 stroke-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>              
+            </div>
+            <div @click="color = 'blue'" :class="color === 'blue' ? 'ring-1 sm:ring-2 lg:ring-3 ring-blue-400 ' : ''" class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 flex justify-center items-center rounded-full cursor-pointer bg-blue-400 border-2 border-white -mr-1.5">
+              <svg x-show="color === 'blue'" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 sm:size-5 stroke-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg> 
+            </div>
+            <div @click="color = 'green'" :class="color === 'green' ? 'ring-1 sm:ring-2 lg:ring-3 ring-green-400 ' : ''" class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 flex justify-center items-center rounded-full cursor-pointer bg-green-400 border-2 border-white -mr-1.5">
+              <svg x-show="color === 'green'" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 sm:size-5 stroke-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg> 
+            </div>
+          </div>
+        </div>
+        <!-- product description -->
+        <!-- product title -->
+        <div class="text-slate-800 text-xs font-bold mb-2 md:text-base">ساعت هوشمند اپل مدل Ultra 2</div>
+        <!-- product title -->
+        <!-- product price -->
+        <div class="text-orange-600 font-medium text-center text-sm mb-3">۸۰,۰۰۰,۰۰۰ تومان</div>
+        <!-- product price -->
+        <hr />
+        <!-- show product details -->
+        <button class="w-full font-bold text-orange-600 py-1 md:text-lg">مشاهده و سفارش</button>
+        <!-- show product details -->
+      </div>
+      <!-- product -->
+      <!-- product -->
+      <div class="bg-blue-100">2</div>
+      <!-- product -->
+      <!-- product -->
+      <div class="bg-blue-100">3</div>
+      <!-- product -->
+      <!-- product -->
+      <div class="bg-blue-100">1</div>
+      <!-- product -->
+      <!-- product -->
+      <div class="bg-blue-100">2</div>
+      <!-- product -->
+      <!-- product -->
+      <div class="bg-blue-100">3</div>
+      <!-- product -->
+    </div>
+    <!-- products section -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </body>
 </html>
