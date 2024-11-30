@@ -67,6 +67,40 @@
       </div>
     </div>
     <!-- filter - sort -->
+    <!-- desktop navbar -->
+    <nav class="bg-white p-4 shadow-lg sticky z-10 top-0 flex items-center justify-between">
+      <ul class="flex items-center gap-x-4 text-slate-800 text-lg">
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-500" href="#">LOGO</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-500" href="#">خانه</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-500" href="#">لپ تاپ</a>
+        </li>
+       <li>
+          <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-500" href="#">ساعت هوشمند</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-500" href="#">تلفن همراه</a>
+        </li>
+      </ul>
+      <!-- search bar -->
+      <div class="flex-1 max-w-2xl">
+        <div class="bg-gray-100 rounded-lg p-1 flex items-center">
+          <span class="ml-3 mr-1">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>            
+          </span>
+          <input type="text" class="focus:outline-none bg-transparent w-full p-2 text-slate-800" placeholder="نام محصول، برند یا رنگ...">
+        </div>
+      </div>
+      <!-- search bar -->
+    </nav>
+    <!-- desktop navbar -->
+    <!-- products section -->
     <div class="grid grid-cols-12 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8">
       <!-- sidebar -->
       <div class="col-span-4 lg:col-span-3 row-span-2 hidden md:block">
@@ -294,8 +328,6 @@
       </div>
       <!-- products section -->
     </div>
-    <!-- products section -->
-
     <!-- products section -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </body>
