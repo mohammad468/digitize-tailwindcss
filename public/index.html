@@ -133,7 +133,7 @@
                   </div>
                   <span class="mr-2">برند محصول</span>                  
                 </div>
-                <svg :class="isOpenBrand === true ? 'rotate-180' : '' " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                <svg class="size-5 transition-all duration-300" :class="isOpenBrand === true ? 'rotate-180' : '' " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                 </svg>                
               </div>
@@ -141,11 +141,11 @@
               <!-- content -->
               <div x-show="isOpenBrand === true" class="pr-6 flex flex-col gap-y-3">
                 <label for="apple" class="flex items-center cursor-pointer">
-                  <input class="form-checkbox rounded" type="checkbox" name="brand" id="apple">
+                  <input class="form-checkbox rounded text-orange-500 focus:ring-orange-500" type="checkbox" name="brand" id="apple">
                   <span class="mr-3">اپل</span>
                 </label>
                 <label for="samsung" class="flex items-center cursor-pointer">
-                  <input class="form-checkbox rounded" type="checkbox" name="brand" id="samsung">
+                  <input class="form-checkbox rounded text-orange-500 focus:ring-orange-500" type="checkbox" name="brand" id="samsung">
                   <span class="mr-3">سامسونگ</span>
                 </label>
               </div>
@@ -164,7 +164,7 @@
                   </div>
                   <span class="mr-2">رنگ محصول</span>                  
                 </div>
-                <svg :class="isOpenColor === true ? 'rotate-180' : '' " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                <svg class="size-5 transition-all duration-300" :class="isOpenColor === true ? 'rotate-180' : '' " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                 </svg>                
               </div>
@@ -195,7 +195,7 @@
                   </div>
                   <span class="mr-2">محدوده قیمت</span>                  
                 </div>
-                <svg :class="isOpenPrice === true ? 'rotate-180' : '' " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                <svg class="size-5 transition-all duration-300" :class="isOpenPrice === true ? 'rotate-180' : '' " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                 </svg>                
               </div>
