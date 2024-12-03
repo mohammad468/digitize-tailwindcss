@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitize App - product details</title>
+    <link rel="stylesheet" href="./build/tailwind.css" />
+</head>
+<body class="bg-gray-100">
+  <!-- app bar -->
+  <div class="flex md:hidden items-center justify-between mt-10 mb-6 px-4">
+    <div class="w-7 h-7 bg-white shadow-lg flex justify-center items-center rounded">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 stroke-slate-800">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+      </svg>          
+    </div>
+    <div class="text-lg font-bold text-slate-800">گوشی سامسونگ S24 Ultra</div>
+    <div class="w-7 h-7 bg-white shadow-lg flex justify-center items-center rounded">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 stroke-slate-800">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
+      </svg>
+    </div>
+  </div>
+  <!-- app bar -->
+  <!-- breadCrumbs -->
+  <div class="w-full flex items-center px-4 gap-x-2 mb-4">
+    <span class="text-sm text-orange-500">تلفن همراه</span>
+    <span>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+      </svg>          
+    </span>
+    <span class="text-sm text-orange-500">برند آیفون</span>
+    <span>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+      </svg>          
+    </span>
+    <span class="text-sm text-gray-500">سامسونگ S24 Ultra</span>
+    <span></span>
+  </div>
+  <!-- breadCrumbs -->
+  <!-- single product -->
+  <div class="px-4 flex flex-col items-center gap-y-9">
+    <div class="w-4/5 max-w-xs">
+        <img class="w-full h-auto" src="../assets/images/S24-ultra.png" alt="S24-ultra">
+    </div>
+    <div class="w-full">
+      <div class="mb-8 text-center">
+        <h1 class="text-slate-800 font-bold text-lg mb-1">گوشی سامسونگ S24 Ultra</h1>
+        <h2 class="font-thin text-gray-500">SAMSUNG S24 Ultra 512 GB</h2>
+      </div>
+      <!-- circles -->
+      <div class="flex items-center justify-evenly w-full mb-5">
+        <span class="text-slate-800 font-bold text-sm md:text-base">انتخاب رنگ:</span>
+        <div class="flex items-center" x-data="{ color: 'red' }">
+            <div @click="color = 'red'" :class="color === 'red' ? 'ring-1 sm:ring-2 lg:ring-3 ring-red-400 ' : ''" class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 flex justify-center items-center rounded-full cursor-pointer bg-red-400 border-2 border-white -mr-1.5">
+              <svg x-show="color === 'red'" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 sm:size-7 stroke-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>              
+            </div>
+            <div @click="color = 'blue'" :class="color === 'blue' ? 'ring-1 sm:ring-2 lg:ring-3 ring-blue-400 ' : ''" class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 flex justify-center items-center rounded-full cursor-pointer bg-blue-400 border-2 border-white -mr-1.5">
+              <svg x-show="color === 'blue'" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 sm:size-7 stroke-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg> 
+            </div>
+            <div @click="color = 'green'" :class="color === 'green' ? 'ring-1 sm:ring-2 lg:ring-3 ring-green-400 ' : ''" class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 flex justify-center items-center rounded-full cursor-pointer bg-green-400 border-2 border-white -mr-1.5">
+              <svg x-show="color === 'green'" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 sm:size-7 stroke-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg> 
+            </div>
+          </div>
+      </div>
+      <!-- circles -->
+      <!-- mobile seller details -->
+      <div class="flex flex-row flex-wrap items-center justify-center gap-x-3 gap-y-3 w-full">
+        <div class="flex justify-center items-center flex-auto">
+          <!-- icon -->
+          <span class="block relative w-7 h-7 rounded-full bg-gray-300 ml-2">
+            <svg class="absolute size-6 top-1.5 right-1.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+            </svg>
+          </span>
+          <!-- icon -->
+          <!-- title -->
+          <span class="font-bold text-sm">فروشنده: </span>
+          <!-- title -->
+          <!-- content -->
+          <span class="text-sm mr-2">دیجی تایز</span>
+          <!-- content -->
+        </div>
+        <div class="flex justify-center items-center flex-auto">
+          <!-- icon -->
+          <span class="block relative w-7 h-7 rounded-full bg-gray-300 ml-2">
+            <svg class="absolute size-6 top-1.5 right-1.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+            </svg>            
+          </span>
+          <!-- icon -->
+          <!-- title -->
+          <span class="font-bold text-sm">گارانتی: </span>
+          <!-- title -->
+          <!-- content -->
+          <span class="text-sm mr-2">18 ماه زرین خدمت</span>
+          <!-- content -->
+        </div>
+        <div class="flex justify-center items-center flex-auto">
+          <!-- icon -->
+          <span class="block relative w-7 h-7 rounded-full bg-gray-300 ml-2">
+            <svg class="absolute size-6 top-1.5 right-1.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+            </svg>            
+          </span>
+          <!-- icon -->
+          <!-- title -->
+          <span class="font-bold text-sm">ارسال توسط: </span>
+          <!-- title -->
+          <!-- content -->
+          <span class="text-sm mr-2">انبار تهران</span>
+          <!-- content -->
+        </div>
+      </div>
+      <!-- mobile seller details -->
+    </div>
+  </div>
+  <!-- single product -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+</html>
